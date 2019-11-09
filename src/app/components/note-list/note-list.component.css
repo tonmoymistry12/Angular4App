@@ -1,0 +1,11 @@
+:host {
+  margin: 10px 0;
+}
+
+app-note-list-item {
+  
+}
+mat-list{
+  padding-top: 0 !important;
+  }
+  

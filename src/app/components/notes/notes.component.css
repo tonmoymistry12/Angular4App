@@ -1,0 +1,32 @@
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  box-shadow: 6px -7px 34px 4px #888888c9;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  
+}
+
+app-note-list {
+  width: 100%;
+}
+.screen-layout{
+  min-height: 90vh;
+  
+  border-left: 1px solid #afaaaa9e;
+ 
+}
+.screen-layout1{
+  border-bottom-left-radius: 5px;
+  background: #b7a6a600;
+}
+.screen-layout2{
+  background: #fbf8f8;
+}
+.screen-layout3{
+  background: #fff;
+  border-bottom-right-radius: 5px;
+}
+.no-padding{
+  padding: 0 !important;
+}

@@ -1,0 +1,26 @@
+.form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-card {
+  word-wrap: break-word;
+  margin-bottom: 1px;
+  padding: 5px 15px;
+}
+
+mat-card-title {
+  color: var(--text-dark-color);
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+mat-card-content {
+  color: var(--text-secondary-color);
+}
+
