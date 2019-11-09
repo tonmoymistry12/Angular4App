@@ -22,5 +22,10 @@ mat-card-title {
 
 mat-card-content {
   color: var(--text-secondary-color);
+    max-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 218px;
+    white-space: nowrap;
 }
 

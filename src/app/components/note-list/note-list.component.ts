@@ -1,5 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {Note} from '../../interfaces/note';
+import {NoteService} from '../../services/note.service';
 
 /**
  * List of notes displayed by the app.
@@ -13,6 +14,10 @@ import {Note} from '../../interfaces/note';
 export class NoteListComponent {
 
   @Input() notes: Note[];
+  constructor(
+    private _noteService: NoteService
+  ) {
+  }
    
   /**
    * helper
@@ -22,8 +27,8 @@ export class NoteListComponent {
    private _isNoteListEmpty(): boolean {
    return !this.notes || !this.notes.length;
   }
-  activateClass(id){
-    console.log(id);
+  activateClass(data){
+    this._noteService.myMethod(data);
         
   }
 }
