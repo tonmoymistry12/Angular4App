@@ -11,7 +11,6 @@ import {NoteListItemComponent} from './components/note-list-item/note-list-item.
 import {NoteEdtDialogComponent} from './components/note-edt-dialog/note-edt-dialog.component';
 import {HeaderComponent} from './components/header/header.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { NotesUpdateComponent } from './notes-update/notes-update.component';
 import { NotesUpdateViewComponent } from './components/notes-update-view/notes-update-view.component';
 
 @NgModule({
@@ -23,7 +22,6 @@ import { NotesUpdateViewComponent } from './components/notes-update-view/notes-u
     NoteListItemComponent,
     NoteEdtDialogComponent,
     HeaderComponent,
-    NotesUpdateComponent,
     NotesUpdateViewComponent
   ],
   imports: [
