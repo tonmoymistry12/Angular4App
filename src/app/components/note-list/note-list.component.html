@@ -4,7 +4,8 @@
   *ngFor="let note of notes" 
   (click)="activateClass(note)"
   [note]="note" 
-  
+  [ngClass]="note.id === activeElement ? 'active' : 'none'"
+
   ></app-note-list-item>
   
 </mat-list>

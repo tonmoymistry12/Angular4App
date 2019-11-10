@@ -12,10 +12,10 @@ import {NoteService} from '../../services/note.service';
   styleUrls: ['./note-list.component.css'],
 })
 export class NoteListComponent {
-
+  public activeElement = 1;
   @Input() notes: Note[];
   constructor(
-    private _noteService: NoteService
+    private _noteService: NoteService,
   ) {
   }
    
@@ -29,6 +29,7 @@ export class NoteListComponent {
   }
   activateClass(data){
     this._noteService.myMethod(data);
+    this.activeElement = data.id;
         
   }
 }

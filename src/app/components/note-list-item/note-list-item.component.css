@@ -29,3 +29,8 @@ mat-card-content {
     white-space: nowrap;
 }
 
+app-note-list-item.active > mat-card {
+  display: block;
+  background-color: #827979 !important;
+
+}

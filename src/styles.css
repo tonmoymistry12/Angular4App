@@ -20,3 +20,12 @@ body {
 .no-space{
   margin: 0 !important;
 }
+.active > mat-card {
+  background-color: #807a7a4d
+}
+.active > mat-card > mat-card-title {
+  color : #ffffff;
+}
+.active > mat-card > mat-card-content {
+  color : #ffffff;
+}
