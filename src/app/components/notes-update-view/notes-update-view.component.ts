@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import {Note} from '../../interfaces/note';
 import {NoteService} from '../../services/note.service';
 
@@ -10,6 +10,7 @@ import {NoteService} from '../../services/note.service';
 export class NotesUpdateViewComponent  {
   public data = {}
   currentDate = new Date();
+  @Output() onUpdateClick = new EventEmitter<void>();
   constructor(
     private _noteService: NoteService
   ) {

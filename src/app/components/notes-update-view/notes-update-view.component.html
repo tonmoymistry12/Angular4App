@@ -3,6 +3,6 @@
     
   <input type="text" [(ngModel)]="data.title" class="note-title" placeholder="Title...">
   <textarea class="note-content" name="text" [(ngModel)]="data.content"  placeholder="Content..."></textarea>
-  <button type="button" class="btn save-btn">Save</button>
+  <button type="button" class="btn save-btn" (click)="onUpdateClick.emit()">Save</button>
   
 

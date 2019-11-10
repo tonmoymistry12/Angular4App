@@ -12,6 +12,10 @@ import {NoteEdtDialogComponent} from './components/note-edt-dialog/note-edt-dial
 import {HeaderComponent} from './components/header/header.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { NotesUpdateViewComponent } from './components/notes-update-view/notes-update-view.component';
+import { NgIdleKeepaliveModule } from '@ng-idle/keepalive'; // this includes the core NgIdleModule but includes keepalive providers for easy wireup
+import { MomentModule } from 'angular2-moment'; // optional, provides moment-style pipes for date formatting
+
+ 
 
 @NgModule({
   declarations: [
@@ -30,6 +34,8 @@ import { NotesUpdateViewComponent } from './components/notes-update-view/notes-u
     FormsModule,
     HttpClientModule,
     NgMaterialModule,
+    NgIdleKeepaliveModule.forRoot(),
+    MomentModule,
   ],
   providers: [
     NoteService

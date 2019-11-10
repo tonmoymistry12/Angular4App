@@ -10,7 +10,7 @@
             <app-note-list [notes]="_notes" ></app-note-list>
         </div>
         <div class="col-md-6 screen-layout screen-layout3">
-        <app-notes-update-view></app-notes-update-view>
+        <app-notes-update-view (onUpdateClick)="_onAutoUpdate()"></app-notes-update-view>
         </div>
     </div>
 

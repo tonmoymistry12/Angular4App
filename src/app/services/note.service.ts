@@ -34,4 +34,7 @@ export class NoteService {
   public deleteNote(id:any): Observable<Note> {
     return this._http.delete(this.API_URL+"/"+id) as Observable<Note>;
   }
+  public updateNote(note: Note): Observable<Note> {
+    return this._http.put(this.API_URL+"/"+note.id, note) as Observable<Note>;
+  }
 }
