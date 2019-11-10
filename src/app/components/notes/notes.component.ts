@@ -58,7 +58,7 @@ export class NotesComponent implements OnInit {
   }
   ngOnInit(): void {
     this._getAllNotes();
- 
+  
   }
   
  
