@@ -29,3 +29,14 @@ body {
 .active > mat-card > mat-card-content {
   color : #ffffff;
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  
+  opacity: 0.5; /* Firefox */
+  font-weight: 300;
+  font-size: 15px;
+}
+.save-btn{
+  background: #5f5d5d9e !important;
+  color: #fff !important;
+  
+}

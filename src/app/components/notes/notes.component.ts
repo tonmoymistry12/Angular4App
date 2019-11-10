@@ -84,7 +84,7 @@ export class NotesComponent implements OnInit {
       this._snackBar.open('Note Deleted.', 'Ok', {duration: this.SNACKBAR_DELAY});
       this._getAllNotes();
     }, (error) => {
-      this._snackBar.open('There was a problem deleting the note.');
+      this._snackBar.open('There was a problem deleting the note. Please select a note');
     });
    
     

@@ -1,3 +1,34 @@
 {
-  "get": []
+  "get": [
+    {
+      "title": "hello",
+      "content": "heelo",
+      "id": 1
+    },
+    {
+      "title": "world",
+      "content": "world",
+      "id": 2
+    },
+    {
+      "title": "country",
+      "content": "india",
+      "id": 3
+    },
+    {
+      "title": "state",
+      "content": "west bengal",
+      "id": 4
+    },
+    {
+      "title": "mm",
+      "content": "nnnnnnn",
+      "id": 5
+    },
+    {
+      "title": "jjj",
+      "content": "nnnnnn",
+      "id": 6
+    }
+  ]
 }

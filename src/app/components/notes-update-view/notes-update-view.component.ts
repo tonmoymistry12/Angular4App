@@ -9,6 +9,7 @@ import {NoteService} from '../../services/note.service';
 })
 export class NotesUpdateViewComponent  {
   public data = {}
+  currentDate = new Date();
   constructor(
     private _noteService: NoteService
   ) {
