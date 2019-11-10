@@ -1,10 +1,10 @@
 
-    <app-header (onAddClick)="_onAddClick()"></app-header>
+    <app-header (onAddClick)="_onAddClick()" (onDeleteClick)="_onDeleteClick()"></app-header>
 
 
     <div class="row no-space main-wrapper">
         <div class="col-md-2 screen-layout screen-layout1">
-            <mat-icon (click)="onAddClick.emit()">add</mat-icon>
+            
         </div>
         <div class="col-md-4 screen-layout screen-layout2 no-padding">
             <app-note-list [notes]="_notes" ></app-note-list>

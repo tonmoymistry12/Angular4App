@@ -12,5 +12,6 @@ import {Component, EventEmitter, Output} from '@angular/core';
 export class HeaderComponent {
 
   @Output() onAddClick = new EventEmitter<void>();
+  @Output() onDeleteClick = new EventEmitter<void>();
 
 }

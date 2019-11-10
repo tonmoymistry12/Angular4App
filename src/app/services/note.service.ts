@@ -19,8 +19,6 @@ export class NoteService {
   }
 
   myMethod(data) {
-    console.log(data); // I have data! Let's return it so subscribers can use it!
-    // we can do stuff with data if we want
     this.myMethodSubject.next(data);
 }
 
@@ -32,5 +30,8 @@ export class NoteService {
   }
   public addNote(note: Note): Observable<Note> {
     return this._http.post(this.API_URL, note) as Observable<Note>;
+  }
+  public deleteNote(id:any): Observable<Note> {
+    return this._http.delete(this.API_URL+"/"+id) as Observable<Note>;
   }
 }

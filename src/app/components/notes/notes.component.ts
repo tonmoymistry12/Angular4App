@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, EventEmitter, Output} from '@angular/core';
 import {Note} from '../../interfaces/note';
 import {NoteService} from '../../services/note.service';
 import {MatDialog, MatSnackBar} from '@angular/material';
@@ -14,11 +14,10 @@ import {NoteEdtDialogComponent} from '../note-edt-dialog/note-edt-dialog.compone
   styleUrls: ['./notes.component.css']
 })
 export class NotesComponent implements OnInit {
-
+  public data = {}
   private _notes: Note[];
   private readonly SNACKBAR_DELAY: number = 3000;
-
-  constructor(
+   constructor(
     private _noteService: NoteService,
     private _dialog: MatDialog,
     private _snackBar: MatSnackBar
@@ -74,5 +73,20 @@ export class NotesComponent implements OnInit {
             this._snackBar.open('There was a problem adding the note.');
           });
       });
+  }
+  private _onDeleteClick(): void {
+     this._noteService.myMethod$.subscribe((data) => {
+      localStorage.setItem('id', data.id);
+   });
+   const id = localStorage.getItem('id')
+   this._noteService.deleteNote(id)
+     .subscribe(() => {
+      this._snackBar.open('Note Deleted.', 'Ok', {duration: this.SNACKBAR_DELAY});
+      this._getAllNotes();
+    }, (error) => {
+      this._snackBar.open('There was a problem deleting the note.');
+    });
+   
+    
   }
 }
